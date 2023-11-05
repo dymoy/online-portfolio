@@ -1,0 +1,53 @@
+/* Global Rules */
+:root {
+    --mute-red: #86737a;
+    --mute-gray: #738186;
+    --white: whitesmoke;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--white);
+}
+
+/* Header Rules */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background-color: var(--mute-red);
+    color: var(--white);
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+header h1 {
+    min-width: 300px;
+}
+
+header nav {
+    min-width: 200px;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--white);
+}
+
+nav ul { 
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 30px;
+}
+
+/* Breakpoint: 900px */
