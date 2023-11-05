@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derek's Online Portfolio</title>
     <link rel="stylesheet" href="./Assets/css/style.css">
+    <!-- Link font stylesheets -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Derek Moy</h1>
+        <h1 id="name">Derek Moy</h1>
         <nav>
             <ul>
                 <li><a href="#about-me" class="nav-link">About Me</a></li>
@@ -20,7 +21,26 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section id="about-me" class="container">
+            <section class="category">
+                <h2 class="category-name">About <br> Me</h2>
+            </section>
+            <section class="about content">
+                <section class="bio">
+                    <p>
+                        Hello world! Thank you for visiting my online portfolio. If you've made your way here, you are probably looking to learn more about me and my work! 
+                        <br><br>
+                        My name is Derek Moy (he/him). I am currently 25 years old and based in Los Angeles County, California. I've earned by Bachelor of Science in Computer Science at the Univerisity of San Francisco in May 2020.
+                        I am currently working in Information Technology - specifically in hardware and software deployment. Outside of my work and education, I enjoy reading, travelling, and live music.
+                        <br><br>
+                        I am interested in exploring the realm of web development and have made this online portfolio to showcase my deployed projects. If you're interested in connecting to discussing my work or shared hobbies, make your way to my "Contact Me" section to reach me. I look forward to hearing from you! 
+                    </p>
+                </section>
+                <figure class="selfie"><img src="./Assets/images/self.JPG" alt="Picture of self"></figure>
+            </section>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>

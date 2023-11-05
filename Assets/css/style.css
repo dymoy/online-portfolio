@@ -8,6 +8,8 @@
 body {
     margin: 0px;
     background-color: var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
 
 /* Header Rules */
@@ -24,7 +26,7 @@ header {
     text-transform: uppercase;
 }
 
-header h1 {
+.name {
     min-width: 300px;
     font-weight: 100;
 }
@@ -56,6 +58,60 @@ nav ul li {
     list-style: none;
     display: inline;
     padding-left: 30px;
+}
+
+/* Main Rules */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    padding: 50px 30px;
+}
+
+.category {
+    width: 25%;
+    border-right: 3px solid var(--mute-red);
+}
+
+.category-name {
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 28px;
+    margin-top: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    padding: 0px 80px 0px 50px;
+}
+
+/* About Me Rules */
+
+.bio {
+    width: 60%;
+    margin: 16px 30px 0px 0px;
+}
+
+.bio p {
+    margin: 0px;
+}
+
+.selfie {
+    width: 20%;
+    height: auto;
+}
+
+.selfie img {
+    position: relative;
+    max-width: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px var(--mute-red);
+    border-top: 50px;
 }
 
 /* Breakpoint: 900px */
