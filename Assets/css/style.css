@@ -1,6 +1,6 @@
 /* Global Rules */
 :root {
-    --mute-red: #86737a;
+    --mute-red: #786472;
     --dark-mute-red: #2b2425;
     --white: whitesmoke;
 }
@@ -82,21 +82,21 @@ nav ul li {
     font-weight: 100;
     text-align: right;
     padding-right: 20px;
-    font-size: 28px;
-    margin-top: 16px;
+    font-size: 25px;
+    margin: 16px 0px;
 }
 
 .content {
     display: flex;
     width: 80%;
     padding: 0px 80px 0px 50px;
-    margin-top: 16px;
+    margin: 16px 0px;
 }
 
 /* About Me Rules */
 .bio {
     width: 60%;
-    margin: 0px 30px 0px 0px;
+    padding: 0px 30px 0px 0px;
 }
 
 .bio p {
@@ -124,7 +124,7 @@ nav ul li {
 }
 
 .card img {
-    opacity: 1;
+    opacity: 0.60;
     transition: ease .8s;
     width: 100%;
     height: auto;
@@ -133,7 +133,7 @@ nav ul li {
 }
 
 .card-link {
-    opacity: 0;
+    opacity: 1;
     transition: ease .8s;
     position: absolute;
     top: 50%;
@@ -154,19 +154,22 @@ nav ul li {
 }
 
 .card:hover img {
-    opacity: 0.35;
-    transition: ease .8s;
-}
-  
-.card:hover .card-link {
-    opacity: 1;
+    opacity: 0.90;
     transition: ease .8s;
 }
 
+.card-link:hover a {
+    color: var(--dark-mute-red);
+    transition: ease .3s;
+}
+
+.card-link:hover img {
+    opacity: 0.90;
+    transition: ease .8s;
+}
 
 /* First presented project sizing */
 .big {
-    /* margin-top: 16px; */
     max-width: 800px;
     height: 300px;
     overflow-y: hidden;
@@ -202,10 +205,17 @@ nav ul li {
 }
 
 /* Contact Me Rules */
+.contact {
+    margin-bottom: 0px;
+}
+
 .contact-card {
-    text-align:center;
-    margin-right: 40px;
+    text-align: center;
     min-width: 120px;
+}
+
+.email {
+    margin: 0px 30px;
 }
 
 .contact-type {
