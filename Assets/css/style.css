@@ -119,6 +119,10 @@ nav ul li {
 }
 
 /* My Work Rules */
+.work {
+    flex-direction: column;
+}
+
 .card img {
     opacity: 1;
     transition: ease .8s;
@@ -141,12 +145,11 @@ nav ul li {
 .card-link a {
     background-color: var(--mute-red);
     color: var(--white);
-    padding: 25px;
+    padding: 20px;
 }
 
 .card {
     position: relative;
-    width: 100%;
     border: 5px solid var(--mute-red);
 }
 
@@ -163,9 +166,11 @@ nav ul li {
 
 /* First presented project sizing */
 .big {
-    width: 60%;
+    /* width: 70%; */
+    max-width: 800px;
     height: 300px;
     overflow-y: hidden;
+    margin-bottom: 25px;
 }
 
 .horiseon {
@@ -173,4 +178,26 @@ nav ul li {
     height: auto;
 }
 
-/* Breakpoint: 900px */
+/* Other presented project sizing  */
+.small-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 810px;
+}
+
+.small {
+    width: 47%;
+    max-width: 392px;
+    height: 150px;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+}
+
+.animated-poem,
+.placeholder {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
