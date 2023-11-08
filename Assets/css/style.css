@@ -76,7 +76,7 @@ nav ul li {
 
 .category {
     width: 20%;
-    border-right: 3px solid var(--mute-red);
+    border-right: 3px solid var(--mute-red);/
 }
 
 .category-name {
@@ -254,33 +254,27 @@ footer {
     background-color: var(--mute-red);
 }
 
-/* Media Queries */
-@media screen and (max-width: 1120px) {
-    /* update My Work titles to fit in box */
-    .card-title {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 1030px) {
-    /* category names on top for column orientation */
-    /* selfie at the top  */
-    
-}
-
+/* Media Queries  */
 @media screen and (max-width: 910px) {
-    /* name and nav centered, nav under name column orientation */
-    /* small cards in column orientation */
-    /* contact in column orientation  */
+    body { 
+        font-size: 13px;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
         padding-bottom: 15px;
     }
+
     #name {
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
     }
+
+    .nav-link{ 
+        font-size: 16px;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -296,9 +290,12 @@ footer {
     .category-name {
         text-align: center;   
         padding-right: 0px;
+        font-size: 20px;
+        word-break:break-all;
     }
 
     .content {
+        justify-content: center;
         padding: 0px;
     }
 
@@ -312,7 +309,7 @@ footer {
         text-align: center;
         padding: 30px 0px 0px 0px;
         order: 2;
-        width: 75%;
+        width: 90%;
     }
 
     .selfie {
@@ -320,20 +317,38 @@ footer {
         text-align: center;
     }
 
+    .selfie img {
+        max-width: 170px;
+    }
+
     .small-flex {
         flex-direction: row;
         flex-wrap: wrap;
-        /* align-items: center; */
-    }
-    
-    .small-card {
-        max-width: 380px;
-        height: 150px;
     }
 
     .contact {
         flex-direction: row;
         justify-content: center;
         padding: 0px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .work, 
+    .small-flex,
+    .contact {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .big {
+        width: 450px;
+        height: 250px;
+    }
+    
+    .small  {
+        width: 400px;
+        height: 170px;
     }
 }
