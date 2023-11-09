@@ -8,6 +8,8 @@ The goal of this project is to create an online portfolio to showcase my skills 
 
 My webpage is split into 3 major sections: About Me, My Work, and Contact Me. This gives visitors a small summary of myself, some highlighted projects, and points of contact to reach me.  
 
+I've created this webpage using semantic HTML, Advaced CSS, flexboxes, and media queries for web responsiveness. The nav bar links will scroll to the corresponding sections; and when clicking on the images in the "My Work" section, the user will be taken to the webpage of that deployed application.
+
 ## Installation 
 
 N/A
@@ -26,7 +28,10 @@ The source code is found in the root directory of the main branch.
 
 ### Screenshot of webpage when resized smaller: 
 
-!["Screenshot of webpage resized:"](./Assets/images/readme-reference/web-responsive-webpage.png)
+!["Screenshot of webpage resized:"](./Assets/images/readme-reference/medium-size-webpage.png)
+
+### Screenshot of webpage when resized even smaller: 
+!["Screenshot of webpage resized:"](./Assets/images/readme-reference/small-size-webpage.png)
 
 ## License 
 
